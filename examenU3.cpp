@@ -5,7 +5,7 @@ using namespace std;
 
 main()
 {
-	int i,x,sum,n1,n2;
+	int i,x,sum,n1,n2, sumfinal=0;
    cout<<"Introduce n\243mero inicial: ";
    cin>>n1;
    cout<<endl;
@@ -20,7 +20,11 @@ main()
 		{
 		cout<<i<<" ";
 		sum = i - i;
+		sumfinal = sumfinal + i;
 		}
+		cout<<endl;
+   		cout<<endl;
+   		cout<<"La suma de este rango de n\243meros es: "<<sumfinal;
    }
    		else
    		{
@@ -30,7 +34,11 @@ main()
    			{
     			cout<<i<<" ";
     			sum = i + i;
+    			sumfinal = sumfinal + i;
    			}
+   			cout<<endl;
+   			cout<<endl;
+   			cout<<"La suma de este rango de n\243meros es: "<<sumfinal;
 		}
 getch();
 }
